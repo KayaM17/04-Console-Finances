@@ -86,3 +86,68 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Plan of Action
+
+// 1. Calculate the total number of months included in the dataset
+
+// The total number of months included in the dataset.
+
+// The net total amount of Profit/Losses over the entire period.
+
+// The average of the changes in Profit/Losses over the entire period.
+
+// The greatest increase in Profit/Losses (date and amount) over the entire period.
+
+// The greatest decrease in Profit/Losses (date and amount) over the entire period.
+
+//string and number.
+
+
+console.log("Financial Analysis")
+console.log("---------------------")
+
+var totalMonths = finances.length; //Created a variable for totalMonth with .length attribute.
+
+console.log("Total Months: " + totalMonths); //Rsults will show in console.
+
+//The net total amount of Profit/Losses over the entire period.
+//Created a variable netTotalProfitLoss with += operator.
+netTotalProfitLoss = 0;
+for (var i = 0; i < finances.length; i++) {
+  netTotalProfitLoss += finances[i][1];
+}
+
+console.log("Total: " + netTotalProfitLoss); //Results will show in console.
+
+//The average of the changes in Profit/Losses over the entire period.
+//Created a variable averageChange with /= operator.
+averageChange = []
+for (var i = 0; i < finances.length - 1; i++) {
+  averageChange.push(finances[i + 1][1] - finances[i][1]);
+}
+averageTotalChange = averageChange.reduce((a, b) => a + b, 0) / averageChange.length;
+console.log("Average Change: " + averageTotalChange); //Results will show in console.
+
+//The greatest increase in Profit/Losses (date and amount) over the entire period.
+//Created a variable greatestIncrease with Math.max function.
+greatestIncrease = Math.max(...averageChange);
+console.log("Greatest Increase in Profits/Loss: " + greatestIncrease); //Results will show in console.
+
+//The greatest decrease in Profit/Losses (date and amount) over the entire period.
+//Created a variable greatestDecrease with Math.min function.
+greatestDecrease = Math.min(...averageChange);
+console.log("Greatest Decrease in Profits/Loss: " + greatestDecrease); //Results will show in console.
+
+
+
+
+
+
+
+
+
+
+
+
+
