@@ -126,6 +126,8 @@ averageChange = []
 for (var i = 0; i < finances.length - 1; i++) {
   averageChange.push(finances[i + 1][1] - finances[i][1]);
 }
+//change the variable name to averageTotalChange to make it less confusing.
+//Created a variable averageTotalChange to give an accurate sum of the averageChange.
 averageTotalChange = averageChange.reduce((a, b) => a + b, 0) / averageChange.length;
 console.log("Average Change: " + averageTotalChange); //Results will show in console.
 
