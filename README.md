@@ -92,6 +92,6 @@ You are required to submit BOTH of the following for review:
 
 ---
 
-## Copyright
+## License
+Licensed under the MIT License
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
