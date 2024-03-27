@@ -30,7 +30,7 @@ When you open the code in the browser the resulting analysis looks similar to th
 
 ## Development Process
 
-I began by sketching out the basic functionality and user interface of the application. Using JavaScript and Node.js, I created a series of modules to handle tasks such as reading and writing data to files, managing user input, and performing calculations.
+I began by sketching out the basic functionality and user interface of the application. Using JavaScript, I created a series of modules to handle tasks such as reading and writing data to files, managing user input, and performing calculations.
 
 One of the key challenges I faced during development was designing an intuitive and user-friendly interface within the constraints of the command-line environment. I experimented with different approaches to ensure that the application remained easy to use while providing robust financial management capabilities.
 
